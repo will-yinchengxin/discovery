@@ -1,7 +1,6 @@
 package discovery
 
 import (
-	"api-gateway/consts"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -66,6 +65,6 @@ func Remove(s []resolver.Address, addr resolver.Address) ([]resolver.Address, bo
 	return nil, false
 }
 
-func BuildResolverUrl(app string) string {
-	return consts.Etcd + ":///" + app
+func BuildResolverUrl(ETCD, app string) string {
+	return Etcd + ":///" + app
 }
