@@ -65,6 +65,6 @@ func Remove(s []resolver.Address, addr resolver.Address) ([]resolver.Address, bo
 	return nil, false
 }
 
-func BuildResolverUrl(ETCD, app string) string {
-	return Etcd + ":///" + app
+func BuildResolverUrl(etcd, app string) string {
+	return etcd + ":///" + app
 }
